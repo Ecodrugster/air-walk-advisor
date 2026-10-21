@@ -24,12 +24,16 @@ npm test
 npm run build
 ```
 
+## Репозиторий
+
+https://github.com/Ecodrugster/air-walk-advisor
+
 ## Деплой на Vercel
 
-1. Создайте репозиторий на GitHub и запушьте проект.
-2. На [vercel.com](https://vercel.com) → Add New Project → импорт репозитория.
-3. Framework Preset: Vite. Build: `npm run build`, Output: `dist`.
-4. После каждого `git push` сайт обновляется автоматически.
+1. Войдите на [vercel.com](https://vercel.com) через GitHub.
+2. Add New Project → выберите `air-walk-advisor`.
+3. Framework Preset: Vite. Build Command: `npm run build`, Output Directory: `dist`.
+4. Deploy. После каждого `git push` сайт обновляется автоматически.
 
 ## Структура
 
