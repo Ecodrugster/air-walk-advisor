@@ -110,10 +110,9 @@ function App() {
   return (
     <div className="app">
       <header className="header">
-        <p className="badge">Средний уровень</p>
-        <h1>Air Walk Advisor</h1>
+        <h1>Советник прогулок</h1>
         <p className="lead">
-          Погода, PM2.5 / PM10 и простой ответ: можно ли гулять и когда
+          Погода и простой ответ: можно ли гулять и когда
           проветривать.
         </p>
       </header>
