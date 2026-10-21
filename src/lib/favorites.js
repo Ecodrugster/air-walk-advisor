@@ -51,28 +51,28 @@ export function isFavorite(list, id) {
 function defaultFavorites() {
   return [
     {
-      id: 1526273,
+      id: 1526384,
       name: 'Алматы',
       country: 'Казахстан',
       admin1: 'Алматы',
-      latitude: 43.25,
-      longitude: 76.92,
+      latitude: 43.25249,
+      longitude: 76.9115,
     },
     {
-      id: 1526274,
+      id: 1526273,
       name: 'Астана',
       country: 'Казахстан',
       admin1: 'Астана',
-      latitude: 51.18,
-      longitude: 71.45,
+      latitude: 51.1801,
+      longitude: 71.446,
     },
     {
-      id: 1526275,
+      id: 1526421,
       name: 'Караганда',
       country: 'Казахстан',
       admin1: 'Карагандинская область',
-      latitude: 49.8,
-      longitude: 73.1,
+      latitude: 49.83333,
+      longitude: 73.1658,
     },
   ]
 }
