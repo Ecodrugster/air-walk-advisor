@@ -1,0 +1,254 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding: 1.5rem 1.25rem 2.5rem;
+  text-align: left;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.header h1 {
+  margin: 0.35rem 0 0.5rem;
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  letter-spacing: -0.03em;
+}
+
+.lead {
+  margin: 0;
+  max-width: 40rem;
+  color: var(--text);
+}
+
+.badge {
+  display: inline-block;
+  margin: 0;
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--accent);
+  background: var(--accent-bg);
+  border: 1px solid var(--accent-border);
+}
+
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 1rem 1.1rem;
+  box-shadow: var(--shadow-soft);
+}
+
+.panel h2 {
+  margin: 0 0 0.75rem;
+  font-size: 1.1rem;
+}
+
+.label {
+  display: block;
+  font-weight: 600;
+  color: var(--text-h);
+  margin-bottom: 0.4rem;
+}
+
+.search-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.search-row input {
+  flex: 1 1 14rem;
+  min-width: 0;
+  padding: 0.7rem 0.85rem;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text-h);
+  font: inherit;
+}
+
+.search-row input:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.btn-secondary {
+  padding: 0.65rem 0.9rem;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--code-bg);
+  color: var(--text-h);
+  font: inherit;
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+  border-color: var(--accent-border);
+}
+
+.chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.chip {
+  padding: 0.45rem 0.85rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text-h);
+  font: inherit;
+  cursor: pointer;
+}
+
+.chip:hover {
+  border-color: var(--accent-border);
+}
+
+.chip-active {
+  background: var(--accent-bg);
+  border-color: var(--accent-border);
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.suggestions {
+  list-style: none;
+  margin: 0.75rem 0 0;
+  padding: 0;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.suggestions button {
+  width: 100%;
+  text-align: left;
+  padding: 0.7rem 0.85rem;
+  border: 0;
+  border-bottom: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text-h);
+  font: inherit;
+  cursor: pointer;
+}
+
+.suggestions li:last-child button {
+  border-bottom: 0;
+}
+
+.suggestions button:hover {
+  background: var(--accent-bg);
+}
+
+.status {
+  margin: 0.75rem 0 0;
+  color: var(--text);
+}
+
+.status-error {
+  color: #ef4444;
+}
+
+.results {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 720px) {
+  .results {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .results .advice {
+    grid-column: 1 / -1;
+  }
+}
+
+.card .muted {
+  margin: -0.35rem 0 0.85rem;
+  font-size: 0.9rem;
+  color: var(--text);
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.85rem 1rem;
+  margin: 0;
+}
+
+.stats dt {
+  font-size: 0.85rem;
+  color: var(--text);
+  margin-bottom: 0.15rem;
+}
+
+.stats dd {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--text-h);
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.level-pill {
+  display: inline-block;
+  margin-bottom: 0.9rem;
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  border: 1px solid;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.dot {
+  width: 0.65rem;
+  height: 0.65rem;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.advice-summary {
+  margin: 0 0 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 650;
+  color: var(--text-h);
+}
+
+.flags {
+  list-style: none;
+  margin: 1rem 0 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.flags li {
+  padding: 0.35rem 0.7rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.flags .ok {
+  background: rgba(34, 197, 94, 0.15);
+  color: #16a34a;
+}
+
+.flags .no {
+  background: rgba(239, 68, 68, 0.12);
+  color: #dc2626;
+}
+
+.footer {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--text);
+}
